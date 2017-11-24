@@ -1,0 +1,22 @@
+<!--pages/shouchang/shouchang.wxml-->
+
+    <view class='nav'>
+      <text class='{{key == 1?"active":""}}'>第一张</text>
+      <text class='{{key == 2?"active":""}}'>第二张</text>
+      <text class='{{key == 3?"active":""}}'>第三张</text>
+    </view>
+<view style="white-space: nowrap;" class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+    <!-- <view class="club" animation="{{animation1}}" bindtap="scrollLeft">
+      <text>{{clubs[0].name}}</text>
+      <image src="{{clubs[0].image}}"/>
+    </view> -->
+    <view class="club" animation="{{animation2}}" bindtap="scrollLeft" id='1'>
+      <image wx:if="{{key>1}}" src="{{clubs[0].image}}"/>
+    </view>
+    <view class="club" animation="{{animation3}}" id='2'>
+      <image src="{{clubs[1].image}}"/>
+    </view>
+    <view class="club" animation="{{animation4}}" bindtap="scrollRight" id='3'>
+      <image wx:if="{{key<3}}" src="{{clubs[2].image}}"/>
+    </view>
+  </view>

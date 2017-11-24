@@ -1,0 +1,76 @@
+/* pages/shouchang/shouchang.wxss */
+page{
+  height: 100%;
+}
+.nav{
+  overflow: hidden;
+  padding: 10rpx;
+  margin-bottom: 40rpx;
+}
+.nav text{
+  width: 33.33%;
+  float: left;
+  color: #999;
+  text-align: center;
+  display: block;
+  font-size: 24rpx;
+}
+.nav text.active{
+  position: relative;
+  top: -10rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+.box {
+  height: 80%;
+  z-index: 0;
+  margin: 50rpx 0;
+  margin-top: 200rpx;
+}
+.box .club {
+  height: 60%;
+  width: 55%;
+  position: relative;
+  display: inline-block;
+}
+.club image {
+  height: 100%;
+  width: 100%;
+}
+.club text {
+  display: block;
+  width: 100%;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+/* .box .club:nth-child(1) {
+  transform: scale(0.8, 0.8) translateX(-120rpx);
+  opacity: 0.2;
+  z-index: 10;
+} */
+.box .club:nth-child(1) {
+  transform: scale(1,1) translateX(-85%);
+  opacity: 0.5;
+  z-index: 100;
+}
+.box .club:nth-child(2) {
+  transform: scale(1.4,1.4)  translateX(-40%);
+  z-index: 1000;
+}
+.box .club:nth-child(3) {
+  transform: scale(1,1) translateX(-30%);
+  opacity: 0.5;
+  z-index: 100;
+}
+/* .box .club:nth-child(5) {
+  transform: scale(0.8, 0.8) translateX(120rpx);
+  opacity: 0.2;
+  z-index: 10;
+} */
+.box .club:nth-child(1) text,
+.box .club:nth-child(2) text,
+.box .club:nth-child(4) text,
+.box .club:nth-child(5) text{
+  visibility: hidden;
+}
